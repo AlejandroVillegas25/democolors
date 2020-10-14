@@ -1,0 +1,19 @@
+.size-card{
+    margin: 5vh;
+    min-width: 40vh;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+mat-selection-list {
+  max-height: 85vh;
+  overflow: auto;
+}
+mat-icon{
+  color: #ffffff;
+}
+  .mat-list-item.active{
+    color: #ffffff;
+    background-color: #AA983F;
+    border-radius: 5px;
+  }

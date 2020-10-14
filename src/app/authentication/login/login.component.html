@@ -1,0 +1,37 @@
+
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+
+    <mat-card class="size-card1">
+        <!-- <img mat-card-image src="assets/images/imagen-login.png" alt="" class="img-card"> -->
+    </mat-card>
+    <mat-card fxFlex="25" class="size-card">
+        <h1 color="" >Iniciar sesión</h1>
+        <form fxLayoutAlign="stretch" fxLayout="column" class="login-form" (ngSubmit)="login()" name="loginForm" [formGroup]="loginForm" >
+            <mat-form-field >
+                <mat-label>Email</mat-label>
+                <input matInput formControlName="email" placeholder="Ingrese su correo" required>
+                <mat-error *ngIf="loginForm.get('email').errors?.required">
+                    Ingrese un correo
+                </mat-error>
+            </mat-form-field>
+
+            <mat-form-field>
+                <mat-label>Contraseña</mat-label>
+                <input matInput type="password" formControlName="password" placeholder="Ingrese su contraseña" required>
+                <mat-error *ngIf="loginForm.get('password').errors?.required">
+                    Ingresa una contraseña
+                </mat-error>
+                <mat-hint>Minimo 8 caracteres</mat-hint>
+            </mat-form-field>
+
+
+                <a routerLink="">¿Olvidaste tu contraseña?</a>
+            
+            <button mat-raised-button type="submit">Iniciar</button>
+            
+        </form>
+
+        
+
+    </mat-card>
+</div>

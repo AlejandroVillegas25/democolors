@@ -1,0 +1,27 @@
+.mat-tab-group {
+    margin-bottom: 48px;
+  }
+.size-card{
+    margin: 5vh;
+    min-width: 40vh;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    
+}
+mat-grid-tile {
+  background: lightblue;
+}
+
+
+
+
+
+/*.uno {
+  color:  var(--main-bg-color);
+  background-color: var(--main-bg-color);
+  margin: 10px;
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+}*/

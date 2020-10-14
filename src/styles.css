@@ -1,1 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #dedad0;
+}
+
+:root {
+    --main-bg-color: rgb(220, 236, 70);
+    --main-txt-color: rgba(236, 48, 15, 0.904);  
+    --main-padding: 30px;  
+  }
+
+  .div1 {
+    background-color: var(--main-bg-color);
+    color: var(--main-txt-color);  
+    padding: var(--main-padding);
+  }

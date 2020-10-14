@@ -1,0 +1,49 @@
+.main-div{
+    width: 340px;
+    height: 450px;
+    background-image: url("/../assets/images/greca.png");
+    background-position-x: right;
+    background-repeat: no-repeat;
+    background-size: 30%;
+}
+
+.size-card1{
+    width: 340px;
+    height: 450px;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    background-image: url("/../assets/images/imagen-login.png");
+    background-size: cover;
+}
+.size-card{
+    width: 340px;
+    height: 450px;
+}
+
+.main-div mat-card{
+    padding: 0px;
+}
+.login-form{
+    padding: 40px;
+}
+mat-form-field{
+    margin-top: 0px;
+}
+a{
+    margin-top: 40px;
+    color: #AA983F;
+    text-align: center;
+    text-decoration: none;
+}
+button{
+    margin-top: 40px;
+    background-color: #AA983F;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+h1{
+    padding-top: 50px;
+    text-align: center;
+    font-weight: bold;
+}

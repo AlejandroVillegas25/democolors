@@ -1,0 +1,32 @@
+<!-- <mat-tab-group mat-align-tabs="center">
+    <mat-tab label="First">Content 1</mat-tab>
+    <mat-tab label="Second">Content 2</mat-tab>
+    <mat-tab label="Third">Content 3</mat-tab>
+  </mat-tab-group> -->
+
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile >1
+      <mat-card [style.color]="color" >Simple card</mat-card>
+      <div [style.background]="color2"> ponemos un texto </div>
+        <div  [style.fontStyle]="font"> esto es un texto en italica
+        <br>
+        <br>
+        <input type="text" [(ngModel)]="estilo" />
+        <button [className]="estilo">BOTON MODIFICADO</button> 
+
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile >2
+      <input type="text" [(ngModel)]="color2" />
+      <mat-card fxFlex="50" class="size-card" [style.background]="color2">hola mundo</mat-card>
+    </mat-grid-tile>
+    <mat-grid-tile class="div1">3
+      <input type="text" [(ngModel)]="color" />
+      <div [ngStyle]="{'color': color, 'font-size': size + 'px'}">
+        style using ngStyle
+      </div>
+    </mat-grid-tile >
+    <mat-grid-tile [ngStyle]="titleStyles"><h1 style="font-size: 50px;">4</h1></mat-grid-tile>
+  </mat-grid-list>
+
+
